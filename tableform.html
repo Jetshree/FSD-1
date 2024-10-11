@@ -10,7 +10,7 @@
 
     <form action="tabletask.html" method="get">
         <fieldset>
-            <legend>signup</legend> 
+            <legend>signup</legend>
             <table border="2">
                 <tr>
                     <td>Name</td>
@@ -21,6 +21,59 @@
                     <td><input type="password" name="pwd"></td>
                 </tr>
                 <tr>
+                    <td>Gender</td>
+                    <td><label><input type="radio" name="Gender" checked value="male">male</label>
+                        <label><input type="radio" name="Gender" checked value="female">female</label>
+                        <label><input type="radio" name="Gender" checked value="others">others
+                    </td></label>
+                </tr>
+                <tr>
+                    <td>Subjects</td>
+                    <td><label><input type="checkbox" name="Subjects" value="FSD">FSD</label>
+                        <label><input type="checkbox" name="Subjects" value="DS">DS</label>
+                        <label><input type="checkbox" name="Subjects" value="JAVA">JAVA
+                    </td></label>
+                </tr>
+                <tr>
+                    <td>volume</td>
+                    <td>
+                        <input type="range" min="0" max="1000" step="100" oninput="num.value=this.value">
+                        <input type="text" disabled id="num">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload cv</td>
+                    <td>
+                        <input type="file" multiple>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="image" src="Screenshot (3).png"></td> 
+                    <!-- image acts as submit button so prev fields need to filled -->
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="comments" rows="2" cols="2" placeholder="xyz">comments</textarea>
+                    </td>
+                    <td>
+                        <select name="area">
+                            <option selected>Select area</option>
+                            <optgroup label="Ahmedabad">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </optgroup>
+                            <optgroup label="Gandhinagar">
+                                <option value="X">X</option>
+                                <option value="Y">Y</option>
+                                <option value="Z">Z</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+        
+                <tr>
                     <td><input type="submit"></td>
                     <td><input type="reset"></td>
                 </tr>
@@ -29,4 +82,5 @@
     </form>
 </body>
 
+    
 </html>
