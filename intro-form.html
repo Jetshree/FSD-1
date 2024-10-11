@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+
+</head>
+<body>
+    <form action="/server" method="" enctype="">
+        <fieldset>
+            <legend>My Form</legend>1
+            <label for="vol">volume</label>
+        <input type="range" name="volume" id="vol" max="150" step="10" oninput="num.value=this.value" >
+        <input type="text" id="num" disabled>
+        
+
+        <br>
+        <select name="dept">
+            <optgroup label="computer">
+                <option selected>select option</option>
+                <option value="ce">ce</option>
+                <option value="ece">ece</option>
+                <option value="cse">cse</option>
+                <option value="it">it</option>
+                <option value="aiml">aiml</option>
+            </optgroup>
+            <optgroup label="mech">
+                <option disabled>select option</option>
+                <option value="abc">abc</option>
+                <option value="cas">cad</option>
+                
+            </optgroup>
+            
+        </select>
+        <br>
+        
+        upload cv <input type="file"  name="f1" multiple> <!--if multiple not written will not allow to upload multiple file-->
+        <br>
+        <input type="image" src="abc.png" alt="btn" width="200" height="100">
+        <br>
+        <!-- <input type="submit" value="sub">
+        <input type="reset" value="reset"> -->
+        
+        <button type="submit">click</button>
+        </fieldset>
+    </form>
+</body>
+</html>

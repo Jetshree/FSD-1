@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/server">
+         <fieldset>
+            <legend align="center">Pizza shop</legend>
+            <table >
+                <tr>
+                    <th colspan="2">Pizza shop</th>
+                </tr>
+
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" placeholder="enter name" id="name"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="yopping">toping</label></td>
+                    <td>
+                        <input type="radio" id="yopping" name="choice"/>
+                        <span>supreme</span>
+                        <br>
+                        <input type="radio" id="yopping" name="choice"/>
+                        <span>vegeterain</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="extras">Extras</label></td>
+                        <td>
+                        <input type="checkbox" id="extras" name="select">
+                        <span>chesse</span>
+                        <br>
+                        <input type="checkbox" id="extras" name="select">
+                        <span>others</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    
+                    <td><label for="size">size</label></td>
+                    <td>
+                        <select name="size">
+                            <option value="s">small</option>
+                            <option value="m">medium</option>
+                            <option value="l">large</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><label for="com" ></label>Comments</label>
+                        <br>
+                    <textarea name="random" id="com" cols="20" rows="5"></textarea></td>
+                </tr>
+                
+                <tr>
+                    <th>
+                        <button atype="submit">Order</button>
+                        <button type="reset">reset</button>
+                    </th>
+                </tr>
+
+            </table>
+         </fieldset>
+    </form>
+
+</body>
+</html>
