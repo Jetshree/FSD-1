@@ -1,42 +1,35 @@
+<!--write css for following task:
+    write ul with 3 random items 
+if direct child of ul element is b tag then apply font color blue and font size should be 20 px
+if direct child of ul element is li tag, then it should be displayed in red color and smaller font size -->
 <html>
 
 <head>
-    <title>
-        Event Announcement Flyer
-    </title>
+    <style>
+        /* ul b {
+            font-size: 20px;
+            color: blue;
+        } */
+        ul>b {
+            font-size: 20px;
+            color: blue;
+        }
+
+        ul>li {
+            font-size: smaller;
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
-    <center>
-        <h1>
-            Community Art Fair
-        </h1>
-        <i>
-            <!-- Join us for a day of creativity and fun!            -->
-        </i>
-        <br><br>
-        Date:
-        <u>October 15,2024</u>
-        <br>
-        <font size="30" face="Arial">
-            Location: Community Park
-        </font>
-        <br>
-        Entry fee: Rs.200
-        <sup>(Children under 5years age free)</sup>
-        <hr width="100%">
-        <br>
-        <font size="10">
-            <b>
-                Activities:
-            </b>
-            <br>
-        </font>
-        Art Exhibits <sub>(All ages)</sub> <br>
-        Workshops <sub>(Age 10+)</sub> <br>
-        Live Music <sub>(Family friendly)</sub> <br>
-        We hope to see you there!
-    </center>
+    <ul>
+        <li><b>Tea</b></li>
+        <li>Milk</li>
+        <b>
+            <li>Coffee</li>
+        </b>
+    </ul>
 </body>
 
 </html>
