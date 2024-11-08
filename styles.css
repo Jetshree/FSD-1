@@ -1,0 +1,52 @@
+.a{
+    background-color: blueviolet;
+    text-indent: 0px;
+    text-decoration: underline double pink 3px;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    font-weight: 400;
+    font-variant: small-caps;
+    font-style: italic;
+}
+.b{
+    background-color: blue;
+    text-indent: 10px;
+    text-decoration: overline;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.c{
+    background-color: deepskyblue;
+    text-indent: 20px;
+    text-decoration: underline overline;
+    text-transform: lowercase;
+    letter-spacing: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.d{
+    background-color: darkturquoise;
+    text-indent: -1%;
+    text-decoration: line-through;
+    text-transform: capitalize;
+    letter-spacing: -5px;
+    font-size: xx-large;
+
+}
+.e{
+    background-color: chartreuse;
+    text-indent: 50%;
+    text-decoration: none;
+    text-transform: capitalize; 
+    /* capitalize only 1st letter of the word */
+    letter-spacing: -2em;
+}
+.f{
+    background-color: yellow;
+    text-align: justify;
+}
+.g{
+    background-color: orange;
+}
