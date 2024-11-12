@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>pseudo element</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h3::before {
+            content: "#####";
+        }
+
+        h3::after {
+            content: "#####";
+        }
+
+        ::selection {
+            color: green;
+            background-color: yellow;
+        }
+
+        ::marker {
+            color: red;
+        }
+
+        .x li::marker{
+            color: hotpink;
+            content: "#";
+        }
+        p::first-letter{
+            font-size: xx-large;
+        }
+        .p1::first-line{
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>pseudo element</h1>
+    <h2>After and Before</h2>
+    <h3>...5 times "#" Applied after and before content of h3 tag syntax h3::before{content:"#####"}...</h3>
+    <ul>
+        <li>ABC</li>
+        <li>PQR</li>
+        <li>XYZ</li>
+    </ul>
+    <ol>
+        <li>ABC</li>
+        <li>PQR</li>
+        <li>XYZ</li>
+    </ol>
+    <ul class="x">
+        <li>Add attribute content:"#" in ::marker</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <h2>Selection Effect</h2>
+    <h2>Example of selection pseudo element</h2>
+    <p>Select Any Text on this page with first letter effect</p>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo deleniti atque nisi iste laborum nihil fugit dicta dolores molestiae tempore eaque assumenda quaerat repellat libero ratione voluptates, iure fuga aspernatur.</p>
+</body>
+
+</html>

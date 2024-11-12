@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>pseudo class</title>
+        <style>
+            a:link{
+                color: aquamarine;
+            }
+            a:visited{
+                color: hotpink;
+                font-size: large; 
+                /* wont work for visited */
+            }
+            a:hover{
+                color: blue;
+                font-size: xx-large;
+            }
+            a:active{
+                color: lime;
+                font-size: xx-small;
+            }
+            a.abc:hover{
+                color: purple; 
+            }
+            .abc{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#" target="_blank">Link 1</a>
+        <a href="#" target="_blank" class="abc">class abc</a>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>border</title>
+        <style>
+            .a{
+                border-style: solid;
+                border-width: 3px;
+                border-color: red green blue yellow;
+            }
+            .b{
+                border-style: double;
+                border-width: 3px;
+                border-color: red green blue;
+            }
+            .c{
+                border-style: dotted;
+                border-width: 3px;
+                border-color: red green;
+            }
+            .d{
+                border-style: dashed;
+                border-width: 3px;
+                border-color: blue;
+            }
+            .e{
+                border-style: solid dashed dotted double;
+                border-width: 3px;
+                border-color: blue red tomato cyan;
+            }
+            .f{
+                border: 5px solid red;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="a">
+            A solid red green blue yellow border
+        </div>
+        <br>
+        <div class="b">
+            A double red green blue border
+        </div>
+        <br>
+        <div class="c">
+            A dotted red green border
+        </div>
+        <br>
+        <div class="d">
+            A dashed blue border
+        </div>
+        <br>
+        <div class="e">
+            Note: The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first.
+        </div>
+        <div class="f">
+            effect
+        </div>
+    </body>
+</html>
