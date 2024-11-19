@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <style>
+        .i1{
+            width: 200px;
+            height: 40px;
+            background-color: aquamarine;
+            border:1px solid black;
+            transition-property: width,height,background-color;
+            transition-duration: 2s ;
+            transition-delay: 1s;
+        }
+        .i1:hover{
+            width:400px;
+            height: 90px;
+            background-color: rgb(232, 166, 245);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hover to text box to see effect of height, width, background-color</h1>
+    <div>
+        Uname: <input type="text" placeholder="Enter name"  class="i1"> <br>
+        Password: <input type="password" placeholder="password required" class="i1"> <br>
+        <input type="submit" class="i1"> <input type="reset" class="i1">
+    </div>
+</body>
+
+</html>

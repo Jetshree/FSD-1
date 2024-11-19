@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>gradient background</title>
+    <style>
+        div {
+            height: 200px;
+            width: 300px;
+            float: left;
+            border: 1px solid blue;
+            margin: 10px;
+            padding: 10px;
+            position: relative;
+        }
+
+        .p1 {
+            background-image: radial-gradient(rgb(138, 175, 239),rgb(214, 151, 246),rgb(235, 115, 177));
+        }
+
+        .p2 {
+            background-image: radial-gradient(circle, rgb(138, 175, 239),rgb(214, 151, 246),rgb(235, 115, 177));
+        }
+
+        .p3 {
+            background-image: radial-gradient( rgb(138, 175, 239),rgb(214, 151, 246),rgb(235, 115, 177));
+        }
+
+        .p4 {background-image: radial-gradient(from -30deg,rgb(138, 175, 239),rgb(214, 151, 246),rgb(235, 115, 177));}
+
+        .p5 {background-image: radial-gradient(rgb(138, 175, 239) 10%,rgb(214, 151, 246) 40%,rgb(235, 115, 177) 50%);}
+
+        .p6 {background-image: radial-gradient(rgb(138, 175, 239) 10%,rgb(214, 151, 246) 40%,rgb(235, 115, 177));}
+
+        .p7 {background-image: radial-gradient(rgb(138, 175, 239) 10%,rgb(214, 151, 246) 20%,rgb(235, 115, 177)20%);}
+
+        .p8 {background-image:repeating-radial-gradient(rgb(138, 175, 239) 10%,rgb(214, 151, 246) 20%,rgb(235, 115, 177) 20%);}
+    </style>
+</head>
+
+<body>
+    <div class="p1">radial gradient-1</div>
+    <div class="p2">radial gradient-1</div>
+    <div class="p3">radial gradient-1</div>
+    <div class="p4">radial gradient-1</div>
+    <div class="p5">radial gradient-1</div>
+    <div class="p6">radial gradient-1</div>
+    <div class="p7">radial gradient-1</div>
+    <div class="p8">radial gradient-1</div>
+</body>
+
+</html>

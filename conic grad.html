@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>gradient background</title>
+    <style>
+        div {
+            height: 200px;
+            width: 300px;
+            float: left;
+            border: 1px solid blue;
+            margin: 10px;
+            padding: 10px;
+            position: relative;
+        }
+
+        .p1 {
+            background-image: conic-gradient(rgb(138, 175, 239), rgb(214, 151, 246), rgb(235, 115, 177));
+        }
+
+        .p2 {
+            background-image: conic-gradient(from 90deg, rgb(138, 175, 239), rgb(214, 151, 246), rgb(235, 115, 177));
+        }
+
+        .p3 {
+            background-image: conic-gradient(rgb(138, 175, 239) 45deg, rgb(214, 151, 246) 10deg, rgb(235, 115, 177));
+        }
+
+        .p4 {
+            background-image: conic-gradient(purple 0deg, purple 90deg, blue 90deg, blue 180deg, yellow 180deg, yellow 270deg, pink 270deg);
+        }
+
+        .p5 {
+            background-image: conic-gradient(rgb(138, 175, 239) 10%, rgb(214, 151, 246) 40%, rgb(235, 115, 177) 50%);
+        }
+
+        .p6 {
+            background-image: conic-gradient(rgb(138, 175, 239) 10%, rgb(214, 151, 246) 40%, rgb(235, 115, 177));
+        }
+
+        .p7 {
+            background-image: conic-gradient(rgb(138, 175, 239) 10%, rgb(214, 151, 246) 20%, rgb(235, 115, 177)20%);
+        }
+
+        .p8 {
+            background-image: repeating-conic-gradient(rgb(138, 175, 239) 10%, rgb(224, 21, 119) 20%, rgb(13, 201, 243) 20%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p1">conic gradient-1</div>
+    <div class="p2">conic gradient-2</div>
+    <div class="p3">conic gradient-3</div>
+    <div class="p4">conic gradient-4</div>
+    <div class="p5">conic gradient-5</div>
+    <div class="p6">conic gradient-6</div>
+    <div class="p7">conic gradient-7</div>
+    <div class="p8">conic gradient-8</div>
+</body>
+
+</html>
