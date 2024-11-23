@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>variables</title>
+        <style>
+            :root{
+                --c: blue;
+                --bcol: lightgray;
+                --fsize: 32px;
+            }
+            h1{
+                --c: teal;
+                color: var(--c);
+            }
+            p{
+                color: var(--c);
+                background-color: var(--bcol);
+                font-size: var(--fsize);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Example of local and global variable</h1>
+        <p>var() function is used</p>
+    </body>
+</html>

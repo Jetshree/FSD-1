@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style>
+            .pagination{
+                display: inline-block;
+            }
+            .pagination a{
+                text-decoration: none; /* imp */
+                color: black;
+                padding: 20px;
+            }
+            /* a:hover {
+                text-decoration: none; 
+                background-color: blue;
+                font-size: large;
+                padding: 20px;
+            } */
+            a:hover:not(.active){
+                text-decoration: none; /* imp */
+                background-color: palevioletred;
+                font-size: large;
+                padding: 20px;
+            }
+            /* .pagination:hover a{
+                text-decoration: none; 
+                color: blue;
+                padding: 20px;
+            } */
+            a.active{
+                background-color: green;
+                color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </body>
+</html>

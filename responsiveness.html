@@ -1,0 +1,65 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: rgb(234, 202, 75);
+            }
+            .d1{
+                background-color: tomato;
+                font-size: large;
+                padding: 30px;
+                font-weight: bolder;
+            }
+            @media only screen and (max-width: 400px)
+            {
+                .d1{
+                    display: none;
+                }
+            }
+
+            .d2{
+                background-color: aliceblue;
+            }
+            @media only screen and (max-width: 600px)
+            {
+                .d2{
+                    background-color: palegreen;
+                }
+            }
+            @media only screen and (max-width: 300px)
+            {
+                .d2{
+                    background-color: lightskyblue;
+                }
+            }
+
+            .d3{
+                background-color: tomato;
+                color: white;
+            }
+            @media only screen and (max-width: 600px)
+            {
+                a{
+                    text-align: center;
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="d1">
+            Hide elements on different screen sizes.
+        </div>
+        <div class="d2">
+            <h3>Resize to see the effect!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, reiciendis. Voluptates rerum suscipit accusamus optio totam eum dolor repellendus et autem, vero illo explicabo cupiditate quos ex, eveniet, aperiam similique.</p>
+        </div>
+        <div class="d3">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </body>
+</html>
