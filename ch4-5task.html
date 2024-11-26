@@ -1,0 +1,68 @@
+<!-- write html and css script to design on table having 5 rows and 3 columns
+ add random data in it while hovering on row, it should expand around 50% individually, 
+ background color and color will become tomato and cyan expansion should take place in 5 seconds
+ The content inside table having text size 20px, first row has italic style, 
+ content in last row has underlines.-->
+
+<html>
+
+<head>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            border: 1px;
+        }
+        .t1{
+            font-size: 20px;
+        }
+        .r1{
+            font-style: italic;
+        }
+        .r5{
+            text-decoration: underline;
+        }
+        tr{
+            width: 50%;
+            transition-duration: 5s;
+            transition-property: transform;
+        }
+        tr:hover{
+            background-color: pink;
+            color: blue;
+            transform: scaleX(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <table rules="all" class="t1">
+        <tr class="r1">
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+        <tr class="r5">
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+    </table>
+</body>
+
+</html>
