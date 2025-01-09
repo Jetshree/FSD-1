@@ -1,0 +1,33 @@
+<!-- write a js to change text, color and bg color onclick using tagname method -->
+<html>
+
+<head>
+    <script>
+        var ischanged = false
+        function cls() {
+            var x = document.getElementsByTagName("p")
+            for (i = 0; i < x.length; i++) {
+                if (ischanged) {
+                    x[i].innerHTML = "p tag"
+                    x[i].style.color = "blue"
+                    x[i].style.backgroundColor = "pink"
+                }
+                else {
+                    x[i].innerHTML = "changed text"
+                    x[i].style.color = "red"
+                    x[i].style.backgroundColor = "cyan"
+                }
+            }
+            ischanged = !ischanged
+        }    
+    </script>
+</head>
+
+<body>
+    <p>hi</p>
+    <p>hi</p>
+    <p>hi</p>
+    <input type="button" value="click me" onclick="cls()">
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!-- Write a code using JS. Create a function that takes an array of objects 
+(groceries) which calculates the total price and returns it as a number. 
+A grocery object has a product, a quantity and a price. -->
+<html>
+
+<head>
+    <script>
+        const list = [{ product: "apple", quantity: 2, price: 80 },
+        { product: "banana", quantity: 5, price: 10 },
+        { product: "milk", quantity: 1, price: 30 }]
+
+        function ctp(groceries){
+            let tp=0
+            for(let i=0;i<groceries.length;i++){
+                const{quantity,price}=groceries[i]
+                tp+=quantity*price
+            }
+            return tp
+        }
+        const total=ctp(list)
+        document.write("total price is: "+total.toFixed(2))
+    </script>
+</head>
+
+</html>
