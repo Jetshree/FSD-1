@@ -1,0 +1,29 @@
+<!-- write a js to handle:
+1. key should give msg vowel is pressed on pressing vowel key 
+2. give a key code for key press
+2. bg color should change to red after relesing the pressed key -->
+
+<html>
+
+<head>
+    <script>
+        function f1(e){
+            c=(e.key)
+            if(c=="a" || c=="e" || c=="i" || c=="o" || c=="u"){
+                document.getElementById("i1").innerHTML="vowel is entered "+e.keyCode
+            }
+            else{
+                document.getElementById("i1").innerHTML=e.keyCode
+            }
+        }
+        function f2(id) {
+            document.getElementById("i1").style.backgroundColor = "red" // bgColor is an attribute
+        }
+    </script>
+</head>
+
+<body onkeypress="f1(event)" onkeyup="f2(this)" id="i1">
+    click any key
+</body>
+
+</html>

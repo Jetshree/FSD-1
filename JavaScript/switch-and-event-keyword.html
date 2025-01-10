@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>switch case</title>
+    <script>
+        function f1(e) {
+            val = e.button
+            switch (val) {
+                case 0: alert("left click")
+                    break;
+                case 1: alert("middle click")
+                    break;
+                case 2: alert("right click")
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div style="width: 50px; height: 50px; border: 2px solid palevioletred;" onmousedown="f1(event)"></div>
+</body>
+</html>

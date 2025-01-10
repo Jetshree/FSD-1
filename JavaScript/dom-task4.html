@@ -1,0 +1,40 @@
+<!-- write a js to change text, color and bg color onclick using tagname method -->
+<html>
+
+<head>
+    <script>
+        function cls() {
+            var x = document.getElementsByTagName("p")
+            for (i = 0; i < x.length; i++) {
+                x[i].innerHTML = "changed by tag"
+                x[i].style.color = "red"
+                x[i].style.backgroundColor = "cyan"
+            }
+
+            var x = document.getElementById("i1") //inexing and loop doesn't work
+            x.innerHTML = "changed by id"
+            x.style.color = "blue"
+            x.style.fontSize = "60px"
+
+
+            var x = document.getElementsByClassName("c1")
+            for (i = 0; i < x.length; i++) {
+                x[i].innerHTML = "changed by class"
+                x[i].style.color = "tomato"
+                x[i].style.fontSize = "30px"
+            }
+
+
+        }    
+    </script>
+</head>
+
+<body>
+    <p>hi</p>
+    <p id="i1">hi</p>
+    <p class="c1">hi</p>
+
+    <input type="button" value="click me" onclick="cls()">
+</body>
+
+</html>

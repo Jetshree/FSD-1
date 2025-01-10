@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    <div onmouseover="mover(this)" onmouseout="mout(this)"
+        style="background-color: aquamarine; width: 70px; height: 30px; padding: 20px;">click me</div>
+    <script>
+        function mover(e){
+            e.style.backgroundColor="yellow"
+            e.innerHTML="over"
+        }
+        function mout(e){
+            e.style.backgroundColor="pink"
+            e.innerHTML="out"
+        }
+    </script>
+</body>
+
+</html>
