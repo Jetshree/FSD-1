@@ -1,0 +1,28 @@
+<!-- design login form using js, following validation required in password field, minimum length of password must be 8 letters 
+ and it must have some special characters, show the alert having msg password must be strong if length is less than 8, 
+ if ur password doesnt't have any special character then alert should be displayed add one special charater else password 
+ is perfect -->
+<html>
+    <script>
+        function fun() {
+            pat = /\W/
+            u = document.getElementById("t1").value
+            if (u.length<8) {
+                alert("length must be 8 or more");
+            }
+            else if(pat.test(u)==0){
+                alert("password must have special character");
+            }
+            else{
+                alert("password is perfect");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="password" id="t1">
+    <input type="submit" onclick="fun()">
+</body>
+
+</html>

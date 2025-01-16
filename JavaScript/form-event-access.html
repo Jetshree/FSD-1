@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <script>
+            function fun1(){
+                obj=document.f1.t1.value
+                document.write(obj) 
+            }
+            function fun2(){
+                obj=document.forms["f2"]
+                alert(obj.length)
+            }
+        </script>
+        <form action="#" method="get" name="f1" onsubmit="fun1()">
+            <input type="text" name="t1">
+            <input type="password" name="t2">
+            <input type="submit">
+            <input type="reset">
+        </form>
+        ---------------
+        <form action="#" method="get" name="f2" onsubmit="fun2()">
+            <input type="text" name="t1">
+            <input type="password" name="t2">
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </body>
+</html>

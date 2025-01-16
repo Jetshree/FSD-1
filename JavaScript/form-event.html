@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <form action="#" method="get" onsubmit="fun()">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="submit" value="submit">
+            <input type="text" value="hello1" id="i1" onchange="fun2(this)">
+            <input type="text" value="hello2" id="i2" onfocus="this.style.backgroundColor='yellow'">
+            <input type="text" value="HELLO3" id="i3" onblur="fun3(this)">
+        </form>
+        <script>
+            function fun(){
+                a=document.getElementById("name");
+                alert("welcome "+a.value);
+            }
+            function fun2(id){
+                id.value=id.value.toUpperCase();
+            }
+            function fun3(id){
+                id.value=id.value.toLowerCase();
+            }
+        </script>
+    </body>
+</html>
