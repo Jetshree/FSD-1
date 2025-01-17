@@ -1,0 +1,38 @@
+<!-- write a js to validate username and password
+1. password should be 6-12 characters long
+2. username should not start with _ @ and any digit
+3. both field must not be blank -->
+
+<html>
+
+<head>
+    <script>
+        function uname() {
+            pat = /^_|^@|^\d/
+            // pat=/\d{6,12}/ 
+            u = document.getElementById("t1").value
+            v = document.getElementById("t2").value
+            if (u.length == 0 || v.length == 0) {
+                alert("can't be empty");
+            }
+            else if (u.length <= 6 || v.length > 12) {
+                alert("password must be 6-12 characters long");
+            }
+            else if (pat.test(u)) {
+                alert("don't start string with _ @ and any digit ")
+            }
+            else {
+                alert("password is perfect");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="password" id="t1" placeholder="Enter password ">
+    <br>
+    <input type="text" id="t2" placeholder="Enter username ">
+    <input type="submit" onclick="uname()">
+</body>
+
+</html>

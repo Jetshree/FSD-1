@@ -1,0 +1,28 @@
+<!-- write a html form accepting integer having 4 digits only, input should not accept char of letter and special symbol -->
+
+<html>
+
+<head>
+    <script>
+        function uname() {
+            pat = /\d{4}/
+            u = document.getElementById("t1").value
+            if (isNaN(u)) { // this will work without regex too                                          
+                alert("only digits are allowed")
+            }
+            else if (u.length != 4) {
+                alert("4 digit number only")
+            }
+            else {
+                alert("input is perfect");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="t1" placeholder="Enter password ">
+    <input type="submit" onclick="uname()">
+</body>
+
+</html>

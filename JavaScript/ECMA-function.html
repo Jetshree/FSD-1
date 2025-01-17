@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <script>
+        fun1 = (val) => "Hello " + val
+        console.log(fun1('world 1'))
+
+        fun2 = val => "Hello " + val
+        console.log(fun2('world 2'))
+
+        fun3 = () => "Hello world 3"
+        console.log(fun3())
+
+        const newfun=p=>`val=${p}`
+        console.log(newfun(30))
+
+        const add=(a,b)=>`${a+b}`
+        console.log(`Addition=${add(5,7)}`)
+
+        const add1=(j,k)=>{
+            let ans=j+k
+            return ans
+        }
+        console.log(`Addition=${add1(10,15)}`)
+    </script>
+</body>
+
+</html>

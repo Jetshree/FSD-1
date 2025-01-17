@@ -3,17 +3,19 @@
  if ur password doesnt't have any special character then alert should be displayed add one special charater else password 
  is perfect -->
 <html>
+
+<head>
     <script>
         function fun() {
             pat = /\W/
             u = document.getElementById("t1").value
-            if (u.length<8) {
+            if (u.length < 8) {
                 alert("length must be 8 or more");
             }
-            else if(pat.test(u)==0){
+            else if (pat.test(u) == 0) {
                 alert("password must have special character");
             }
-            else{
+            else {
                 alert("password is perfect");
             }
         }
