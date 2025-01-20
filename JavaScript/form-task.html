@@ -1,0 +1,30 @@
+<!-- wap to display form elements value: first name,last name, gender and selected game -->
+ <!-- pending -->
+ <html>
+    <head>
+        <script>
+            fun=()=>{
+                var x=document.getElementById("fname").value;
+                var y=document.getElementById("lname").value;
+                var z=document.getElementById("gender").value;
+                var g=document.getElementById("game").value;
+                document.write(x)
+                document.write(y)
+                document.write(z)
+                document.write(g)
+            }
+        </script>
+    </head>
+    <body>
+        <form action="#" method="get">
+            First name: <input type="text" id="fname"> <br>
+            Last name: <input type="text" id="lname"> <br>
+            Gender: <input type="radio" id="gender" name="gen"> Male
+            <input type="radio" id="gender" name="gen"> Female <br>
+            Select game: <input type="checkbox" name="game"  id="game"> Football 
+            <input type="checkbox" name="game" id="game"> Cricket
+            <input type="checkbox" name="game" id="game"> Basketball <br>
+            <input type="submit" value="Submit" onclick="fun()">
+        </form>
+    </body>
+ </html>

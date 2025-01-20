@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function f1(a,b=2){
+                return a*b
+            }
+            let num1=f1(5)
+            console.log(num1)
+            console.log(5,8)
+            let num2=f1(5,8)
+            console.log(num2)
+
+            fun=(p=2,q)=>{
+                return p*q
+            }
+            console.log(`${fun(30)}`) // NaN
+        </script>
+    </head>
+</html>

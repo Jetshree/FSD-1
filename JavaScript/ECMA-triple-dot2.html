@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script>
+        function fun() {
+            const num1 = [23, 33, 55, 67, 89]
+            const num2 = [12, 34, 56]
+            const fnum = [...num1, ...num2]
+            let maxvalue = Math.max(fnum) // try writing ...fnum 
+            console.log(fnum) // [23, 33, 55, 67, 89, 12, 34, 56]
+            console.log(...fnum) // 23 33 55 67 89 12 34 56
+            document.getElementById('demo').innerHTML = maxvalue
+        }
+    </script>
+</head>
+
+<body>
+    <p onclick="fun()">click here</p>
+    <p id="demo">array is : </p>
+</body>
+
+</html>

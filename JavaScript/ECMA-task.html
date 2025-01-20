@@ -1,0 +1,27 @@
+<!-- take one div with some text and no decoration initially
+ take font size 50 px and italic style as default arg and pass the bg color and text color to function
+ on button click all the new property gets set -->
+
+<html>
+
+<head>
+    <script>
+        fun = (bg, tc, size = '50px', style = "italic") => {
+            var i = document.getElementById("d1");
+            i.style.fontSize = size;
+            i.style.color = tc
+            i.style.backgroundColor = bg
+            i.style.fontStyle = style
+        }
+    </script>
+</head>
+
+<body>
+    <div id="d1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel eveniet laborum hic, dolor nesciunt
+        iusto odio rem assumenda? In repellendus labore quasi officia amet atque consequatur, ut animi debitis!
+    </div>
+    <button onclick="fun('cyan','red')">click me</button>
+</body>
+
+</html>

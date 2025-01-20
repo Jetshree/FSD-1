@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script>
+            function fun(){
+                obj=document.f1.t1.value
+                document.write(obj)
+                localStorage.setItem('uname',obj)
+                console.log(localStorage.getItem('uname'))
+            }
+        </script>
+    </head>
+    <body>
+        <form action="#" name="f1" method="get">
+            <input type="text" name="t1">
+            <input type="submit">
+        </form>
+    </body>
+</html>

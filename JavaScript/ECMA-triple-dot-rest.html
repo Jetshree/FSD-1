@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            function f1(...rest){
+                console.log(rest)
+            }
+            f1(1,2,3,4)
+            function f2(a,b,...rest){
+                console.log(rest)
+            }
+            f2(1,2,3,4,5,6,7,8,9)
+            myfun=(...arg)=>{
+                return arg.length
+            }
+            console.log(`length=${myfun(1,2,3,4,5,6,7,8)}`)
+            function f3(a,b,...c){
+                document.write(`value of a & b is ${a} & ${b} <br>`)
+                document.write(`value of c is ${c} <br>`)
+                document.write(`player at 0th index is ${c[0]} <br>`)
+                document.write(`length of rest operator is ${c.length} <br>`)
+                document.write(`index of jadeja is ${c.indexOf('jadeja')}`)
+                console.log(c.indexOf(`abc`))
+            }
+            f3('dhoni','virat','panth','jadeja','rohit')
+        </script>
+    </head>
+</html>
