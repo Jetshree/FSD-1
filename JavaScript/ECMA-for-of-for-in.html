@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <script>
+            list=[10,20,30]
+            for(let score of list){
+                console.log(score);
+            }
+            for(let key in list){
+                console.log(key);
+                console.log(list[key])
+            }
+            for(let [index,score] of list.entries()){
+                console.log(`${score} is @ ${index}`);
+            }
+        </script>
+    </body>
+</html>

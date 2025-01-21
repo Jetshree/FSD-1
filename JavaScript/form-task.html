@@ -1,6 +1,6 @@
 <!-- wap to display form elements value: first name,last name, gender and selected game -->
- <!-- pending -->
- <html>
+<!-- pending -->
+<!-- <html>
     <head>
         <script>
             fun=()=>{
@@ -9,9 +9,9 @@
                 var z=document.getElementById("gender").value;
                 var g=document.getElementById("game").value;
                 document.write(x)
-                document.write(y)
-                document.write(z)
-                document.write(g)
+                document.write(y+"<br>")
+                document.write(z+"<br>")
+                document.write(g+"<br>")
             }
         </script>
     </head>
@@ -19,12 +19,57 @@
         <form action="#" method="get">
             First name: <input type="text" id="fname"> <br>
             Last name: <input type="text" id="lname"> <br>
-            Gender: <input type="radio" id="gender" name="gen"> Male
-            <input type="radio" id="gender" name="gen"> Female <br>
+            Gender: <input type="radio" id="gender" name="gen" value="male"> Male
+            <input type="radio" id="gender" name="gen" value="Female"> Female <br>
             Select game: <input type="checkbox" name="game"  id="game"> Football 
-            <input type="checkbox" name="game" id="game"> Cricket
+            <input type="checkbox" name="game" id="game" value="cricket"> Cricket
             <input type="checkbox" name="game" id="game"> Basketball <br>
             <input type="submit" value="Submit" onclick="fun()">
         </form>
     </body>
- </html>
+ </html> -->
+
+<html>
+
+<head>
+    <script>
+        function f1() {
+            uname = document.form1.uname.value;
+            lname = document.form1.lname.value;
+            // document.write(document.form1.r1.value)
+            rad = document.getElementsByName("r1");
+            for (i = 0; i < rad.length; i++) {
+                if (rad[i].checked == true) {
+                    gender = rad[i].value;
+                }
+            }
+            hobby = document.getElementsByName("ch1");
+            var hob = "";
+            for (j = 0; j < hobby.length; j++) {
+                if (hobby[j].checked) {
+                    hob = hob + " " + hobby[j].value;
+
+                }
+            }
+            document.write("Uname:" + uname);
+            document.write("<br>lname:" + lname);
+            document.write("<br>" + gender);
+            document.write("<br>Hobby:" + hob);
+        }
+    </script>
+</head>
+
+<body>
+    <form name="form1" method="get">
+        <input type="text" id="uname" name="uname" /></br>
+        <input type="text" id="lname" name="lname" /></br>
+        <input type="radio" name="r1" value="male" />male
+        <input type="radio" name="r1" value="female" />female
+        <input type="checkbox" name="ch1" value="cricket" /> cricket
+        <input type="checkbox" name="ch1" value="football" /> football
+        <input type="checkbox" name="ch1" value="basketball" />basketball
+        <input type="submit" onclick="f1()">
+    </form>
+</body>
+
+</html>
