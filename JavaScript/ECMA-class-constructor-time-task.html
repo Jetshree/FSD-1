@@ -1,0 +1,72 @@
+<!-- write es6 script that create class time having members hour,miniute and second
+ create two time object t1 and t2 and add both the time objects so that it should return in third time object named t
+ third time object should have hour minute and second such that addition of seconds exceeds 60 minute should be incremented
+ if minute exceeds hour should be incremented -->
+
+<html>
+
+<head>
+    <script>
+        class time {
+            constructor(hour, min, sec) {
+                this.hour = hour;
+                this.min = min;
+                this.sec = sec;
+            }
+            addtime = (t1, t2) => {
+                let t = new time(0, 0, 0)
+                if (t1.min + t2.min < 60 && t1.sec + t2.sec < 60) {
+                    t.hour = t1.hour + t2.hour
+                    t.min = t1.min + t2.min
+                    t.sec = t1.sec + t2.sec
+                }
+                else if (t1.min + t2.min > 60 && t1.sec + t2.sec < 60) {
+                    t.hour = t1.hour + t2.hour + 1
+                    t.min = (t1.min + t2.min) % 60
+                    t.sec = t1.sec + t2.sec
+                }
+                else if (t1.min + t2.min < 60 && t1.sec + t2.sec > 60) {
+                    t.hour = t1.hour + t2.hour
+                    t.min = t1.min + t2.min + 1
+                    t.sec = (t1.sec + t2.sec) % 60
+                }
+                else {
+                    t.hour = t1.hour + t2.hour+1
+                    t.min = (t1.min + t2.min) % 60
+                    t.sec = (t1.sec + t2.sec) % 60
+                }
+                return t
+            }
+            timer() {
+                var t = new time()
+                t.hour = t1.hour + t2.hour
+                t.min = t1.min + t2.min
+                t.sec = t1.sec + t2.sec
+
+                if(t.sec>60){
+                    t.sec%=60
+                    t.min++
+                }
+                if(t.min>60){
+                    t.min%=60
+                    t.hour++
+                }
+                return t.hour+":"+t.min+":"+t.sec
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        // t1 = new time(2, 2, 58)
+        // t2 = new time(3, 2, 4)
+        // console.log(tm.addtime())
+        var t1 = new time(2, 2, 58)
+        var t2 = new time(3, 2, 4)
+        var t=new time()
+        console.log(t.timer(t1,t2))
+    </script>
+</body>
+
+</html>
